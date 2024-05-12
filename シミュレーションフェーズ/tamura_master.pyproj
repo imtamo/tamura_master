@@ -1,0 +1,151 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>982e554b-fc38-4e3b-86d4-ff838803bcfe</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>tamura_master.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>tamura_master</Name>
+    <RootNamespace>tamura_master</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="pyMonteOpt\pymopt\metrics\_scoring.py" />
+    <Compile Include="pyMonteOpt\pymopt\metrics\__init__.py" />
+    <Compile Include="pyMonteOpt\pymopt\modeling\_classes.py" />
+    <Compile Include="pyMonteOpt\pymopt\modeling\__init__.py" />
+    <Compile Include="pyMonteOpt\pymopt\modeling_gpu\_classes.py" />
+    <Compile Include="pyMonteOpt\pymopt\modeling_gpu\__init__.py" />
+    <Compile Include="pyMonteOpt\pymopt\preprocessing\_classes.py" />
+    <Compile Include="pyMonteOpt\pymopt\preprocessing\__init__.py" />
+    <Compile Include="pyMonteOpt\pymopt\utils\param_generator.py" />
+    <Compile Include="pyMonteOpt\pymopt\utils\utilities.py" />
+    <Compile Include="pyMonteOpt\pymopt\utils\__init__.py" />
+    <Compile Include="pyMonteOpt\pymopt\visualization\_classes.py" />
+    <Compile Include="pyMonteOpt\pymopt\visualization\__init__.py" />
+    <Compile Include="pyMonteOpt\pymopt\voxel\_classes.py" />
+    <Compile Include="pyMonteOpt\pymopt\voxel\_kernel.py" />
+    <Compile Include="pyMonteOpt\pymopt\voxel\__init__.py" />
+    <Compile Include="pyMonteOpt\virtualOBD.py" />
+    <Compile Include="tamura_master.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="pyMonteOpt\" />
+    <Folder Include="pyMonteOpt\model_result\" />
+    <Folder Include="pyMonteOpt\monte_result\" />
+    <Folder Include="pyMonteOpt\pymopt\" />
+    <Folder Include="pyMonteOpt\pymopt\metrics\" />
+    <Folder Include="pyMonteOpt\pymopt\metrics\__pycache__\" />
+    <Folder Include="pyMonteOpt\pymopt\modeling\" />
+    <Folder Include="pyMonteOpt\pymopt\modeling\__pycache__\" />
+    <Folder Include="pyMonteOpt\pymopt\modeling_gpu\" />
+    <Folder Include="pyMonteOpt\pymopt\modeling_gpu\__pycache__\" />
+    <Folder Include="pyMonteOpt\pymopt\visualization\" />
+    <Folder Include="pyMonteOpt\pymopt\utils\" />
+    <Folder Include="pyMonteOpt\pymopt\preprocessing\" />
+    <Folder Include="pyMonteOpt\pymopt\voxel\" />
+    <Folder Include="pyMonteOpt\pymopt\voxel\__pycache__\" />
+    <Folder Include="pyMonteOpt\subjects\" />
+    <Folder Include="pyMonteOpt\opt_result\" />
+    <Folder Include="pyMonteOpt\subjects\subject0\" />
+    <Folder Include="pyMonteOpt\subjects\subject0\dicom\" />
+    <Folder Include="pyMonteOpt\subjects\subject0\from_3dslicer\" />
+    <Folder Include="pyMonteOpt\subjects\subject0\to_simulation\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="pyMonteOpt\pymopt\metrics\__pycache__\_metrics.cpython-38.pyc" />
+    <Content Include="pyMonteOpt\pymopt\metrics\__pycache__\_metrics.cpython-39.pyc" />
+    <Content Include="pyMonteOpt\pymopt\metrics\__pycache__\_scoring.cpython-38.pyc" />
+    <Content Include="pyMonteOpt\pymopt\metrics\__pycache__\_scoring.cpython-39.pyc" />
+    <Content Include="pyMonteOpt\pymopt\metrics\__pycache__\__init__.cpython-38.pyc" />
+    <Content Include="pyMonteOpt\pymopt\metrics\__pycache__\__init__.cpython-39.pyc" />
+    <Content Include="pyMonteOpt\pymopt\modeling\__pycache__\_classes.cpython-38.pyc" />
+    <Content Include="pyMonteOpt\pymopt\modeling\__pycache__\_classes.cpython-39.pyc" />
+    <Content Include="pyMonteOpt\pymopt\modeling\__pycache__\__init__.cpython-38.pyc" />
+    <Content Include="pyMonteOpt\pymopt\modeling\__pycache__\__init__.cpython-39.pyc" />
+    <Content Include="pyMonteOpt\pymopt\modeling_gpu\__pycache__\_classes.cpython-38.pyc" />
+    <Content Include="pyMonteOpt\pymopt\modeling_gpu\__pycache__\_classes.cpython-39.pyc" />
+    <Content Include="pyMonteOpt\pymopt\modeling_gpu\__pycache__\__init__.cpython-38.pyc" />
+    <Content Include="pyMonteOpt\pymopt\modeling_gpu\__pycache__\__init__.cpython-39.pyc" />
+    <Content Include="pyMonteOpt\pymopt\voxel\__pycache__\_classes.cpython-38.pyc" />
+    <Content Include="pyMonteOpt\pymopt\voxel\__pycache__\_classes.cpython-39.pyc" />
+    <Content Include="pyMonteOpt\pymopt\voxel\__pycache__\_cukernel.cpython-38.pyc" />
+    <Content Include="pyMonteOpt\pymopt\voxel\__pycache__\_kernel.cpython-38.pyc" />
+    <Content Include="pyMonteOpt\pymopt\voxel\__pycache__\_kernel.cpython-39.pyc" />
+    <Content Include="pyMonteOpt\pymopt\voxel\__pycache__\_util.cpython-38.pyc" />
+    <Content Include="pyMonteOpt\pymopt\voxel\__pycache__\__init__.cpython-38.pyc" />
+    <Content Include="pyMonteOpt\pymopt\voxel\__pycache__\__init__.cpython-39.pyc" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-01.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-02.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-03.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-04.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-05.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-06.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-07.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-08.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-09.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-10.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-11.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-12.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-13.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-14.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-15.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-16.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-17.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-18.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-19.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-20.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-21.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-22.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-23.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-24.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-25.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-26.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-27.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-28.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-29.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-30.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-31.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-32.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-33.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-34.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-35.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-36.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-37.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-38.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-39.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-40.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-41.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-42.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-43.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-44.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-45.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-46.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-47.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-48.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-49.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\dicom\1-50.dcm" />
+    <Content Include="pyMonteOpt\subjects\subject0\from_3dslicer\Segmentation.seg.nrrd" />
+    <Content Include="requirements.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
